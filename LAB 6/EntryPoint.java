@@ -24,6 +24,7 @@ public class EntryPoint {
 			}
 		if(x==3) {
 			Calculator three = new Calculator();
+			
 			}
 		if(x==4) {
 			Employee four = new Employee();
