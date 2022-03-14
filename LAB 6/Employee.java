@@ -1,26 +1,37 @@
 import java.util.Scanner;
 
 public class Employee {
-    // Initializing variables
+    
 	private String firstName;
 	private String lastName;
 	private int age;
 	private double salary;
 
 	public Employee() {
-        // Get user input
 	
-        Scanner scan = new Scanner(System.in);
+        	Scanner scan = new Scanner(System.in);
 
-		
+		System.out.println("Please imput your first name :");
+		firstName = scan.nextLine();
 
-        /**
-         * Continue code here to ask for the first name, last name, age, and salary, IN THAT ORDER
-         */
+		System.out.println("Please imput the last name :");
+		lastName = scan.nextLine();
 
-    }
+		System.out.println("Please imput your age :");
+		age = scan.nextInt();
 
-    public String toString() {
-        // insert logic for toString method
-    }
+		System.out.println("Please imput your salary :");
+		salary = scan.nextDouble();
+
+	}
+
+	public String toString() {
+
+		String output = " firstName: " +  firstName +
+			        "\n lastName: " + lastName +
+			        "\n age: " + age +
+			        "\n salary: " + salary ;
+		return output;
+        
+	}
 }
